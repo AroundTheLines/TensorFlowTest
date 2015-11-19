@@ -8,11 +8,11 @@ import tensorflow as tf
 matrix1 = tf.constant([[3., 3.]])
 
 # Create another constant that creates a 2x1 matrix.
-matrix2 = tf.constant([[2., 2.]])
+matrix2 = tf.constant([[2.],[2.]])
 
 # Create a 'matmul' op that takes in 'matrix1' and 'matrix2' as inputs.
 # The returned value, 'product', represents the result of the matrix multiplication.
-product = tf.matmul(matrix1,matrix2)
+product = tf.matmul(matrix1, matrix2)
 
 # Launch the default graph
 sess = tf.Session()
